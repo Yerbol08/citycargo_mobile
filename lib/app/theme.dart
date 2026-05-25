@@ -59,6 +59,7 @@ ThemeData buildAppTheme() {
       onSurface: AppColors.textPrimary,
     ),
     scaffoldBackgroundColor: AppColors.grayBg,
+    dividerColor: Colors.transparent,
     appBarTheme: const AppBarTheme(
       backgroundColor: AppColors.grayBg,
       foregroundColor: AppColors.textPrimary,
@@ -99,7 +100,6 @@ ThemeData buildAppTheme() {
       style: OutlinedButton.styleFrom(
         foregroundColor: AppColors.textPrimary,
         backgroundColor: AppColors.surface,
-        side: const BorderSide(color: AppColors.border, width: 1.5),
         minimumSize: const Size.fromHeight(AppSizes.buttonHeight),
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(AppSizes.radiusLg),
@@ -169,7 +169,7 @@ ThemeData buildAppTheme() {
       ),
     ),
     dividerTheme: const DividerThemeData(
-      color: AppColors.border,
+      color: Colors.transparent,
       thickness: 1,
       space: 1,
     ),
@@ -201,6 +201,7 @@ ThemeData buildDarkTheme() {
       onSurface: darkText,
     ),
     scaffoldBackgroundColor: darkBg,
+    dividerColor: Colors.transparent,
     appBarTheme: const AppBarTheme(
       backgroundColor: darkBg,
       foregroundColor: darkText,
@@ -241,7 +242,6 @@ ThemeData buildDarkTheme() {
       style: OutlinedButton.styleFrom(
         foregroundColor: darkText,
         backgroundColor: darkSurface,
-        side: const BorderSide(color: darkBorder, width: 1.5),
         minimumSize: const Size.fromHeight(AppSizes.buttonHeight),
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(AppSizes.radiusLg),
@@ -312,7 +312,7 @@ ThemeData buildDarkTheme() {
       ),
     ),
     dividerTheme: const DividerThemeData(
-      color: darkBorder,
+      color: Colors.transparent,
       thickness: 1,
       space: 1,
     ),

@@ -619,10 +619,9 @@ class _FinanceFilters extends StatelessWidget {
   Widget build(BuildContext context) {
     return Card(
       elevation: 0,
-      color: AppColors.surface,
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(AppSizes.radiusLg),
-        side: const BorderSide(color: AppColors.border),
+        side: BorderSide.none,
       ),
       child: Padding(
         padding: const EdgeInsets.all(12),

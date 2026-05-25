@@ -29,7 +29,7 @@ class AdminDataCard extends StatelessWidget {
       color: AppColors.surface,
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(AppSizes.radiusLg),
-        side: const BorderSide(color: AppColors.border),
+        side: BorderSide.none,
       ),
       child: InkWell(
         onTap: onTap,
@@ -176,7 +176,10 @@ class AdminListScaffold extends StatelessWidget {
                           ),
                         )
                       else
-                        ...children,
+                        for (var i = 0; i < children.length; i++) ...[
+                          children[i],
+                          if (i < children.length - 1) const SizedBox(height: 12),
+                        ],
                     ],
                   ),
                 ),
