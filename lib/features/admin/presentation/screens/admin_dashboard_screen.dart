@@ -200,11 +200,11 @@ class _AdminDashboardScreenState extends ConsumerState<AdminDashboardScreen> {
       sliver: SliverList(
         delegate: SliverChildListDelegate([
           _buildMetricsSection(data),
-          const SizedBox(height: 24),
+          const SizedBox(height: 16),
           _buildQuickActionsSection(data),
-          const SizedBox(height: 24),
+          const SizedBox(height: 16),
           _buildChartPlaceholder(),
-          const SizedBox(height: 24),
+          const SizedBox(height: 16),
           _buildRecentOrdersSection(data),
         ]),
       ),
