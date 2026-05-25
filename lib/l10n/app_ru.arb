@@ -1,0 +1,158 @@
+{
+  "@@locale": "ru",
+  "appTitle": "CityCargo",
+  "orders": "Заказы",
+  "profile": "Профиль",
+  "wallet": "Кошелек",
+  "home": "Главная",
+  "createOrder": "Создать заказ",
+  "orderDetails": "Детали заказа",
+  "statusCreated": "Создан",
+  "statusAssigned": "Курьер назначен",
+  "statusArrivedSender": "Курьер прибыл к отправителю",
+  "statusPickedUp": "Забран у отправителя",
+  "statusArrivedRecipient": "Курьер прибыл к получателю",
+  "statusDelivered": "Доставлен",
+  "statusCancelled": "Отменен",
+  "recentOrders": "Последние заказы",
+  "all": "Все",
+  "activeOrders": "Активные",
+  "totalOrders": "Всего",
+  "noOrdersTitle": "Заказов нет",
+  "noOrdersSubtitle": "Создайте первый заказ за пару минут.",
+  "newOrderButton": "Новый заказ",
+  "settings": "Настройки",
+  "appearance": "Внешний вид",
+  "appTheme": "Тема приложения",
+  "themeSystem": "Системная",
+  "themeLight": "Светлая",
+  "themeDark": "Темная",
+  "language": "Язык",
+  "appLanguage": "Язык приложения",
+  "selectTheme": "Выберите тему",
+  "selectLanguage": "Выберите язык",
+  "myShipments": "Мои отправки",
+  "myReceipts": "Мои получения",
+  "shipments": "Отправки",
+  "receipts": "Получения",
+  "routeMap": "Карта маршрута",
+  "routeUnavailable": "Маршрут временно недоступен",
+  "toSender": "К отправителю",
+  "toRecipient": "К получателю",
+  "tooManyAttempts": "Слишком много попыток.\nОбратитесь к оператору.",
+  "invalidCode": "Неверный код",
+  "codeAccepted": "Код принят",
+  "accountBlocked": "Аккаунт заблокирован",
+  "contactSupport": "Обратитесь в службу поддержки",
+  "toLoginScreen": "На экран входа",
+  "adminDashboard": "Панель",
+  "adminUsers": "Польз.",
+  "adminFinance": "Финансы",
+  "adminMap": "Карта",
+  "adminChats": "Чаты",
+  "adminRequests": "Заявки",
+  "orderStatus": "Статус заказа",
+  "orderLabel": "Заказ",
+  "addressNotSpecified": "Адрес не указан",
+  "greeting": "Здравствуйте, {name}",
+  "@greeting": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "homeSubtitle": "Отправляйте и отслеживайте доставку в CityCargo",
+  "activeOrderLabel": "Активный заказ",
+  "defaultClientName": "клиент",
+  "selectAddressHint": "Выберите адрес...",
+  "newOrder": "Новый заказ",
+  "sender": "Отправитель",
+  "senderPhone": "Телефон отправителя",
+  "senderAddressLabel": "Адрес отправки",
+  "recipient": "Получатель",
+  "recipientPhone": "Телефон получателя",
+  "recipientAddressLabel": "Адрес доставки",
+  "parcel": "Посылка",
+  "parcelCountLabel": "Количество мест",
+  "commentLabel": "Комментарий",
+  "commentHint": "Например: позвонить за 10 минут",
+  "continueButton": "Продолжить",
+  "preliminaryPrice": "Предварительная цена",
+  "priceNotice": "Точная сумма придёт от сервера после создания",
+  "needToSelectOnMap": "Нужно выбрать на карте",
+  "coordsSaved": "Координаты сохранены",
+  "map": "Карта",
+  "tagHome": "Дом",
+  "tagOffice": "Офис",
+  "tagWarehouse": "Склад",
+  "enterAddress": "Введите {label}",
+  "@enterAddress": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "selectOnMapToSave": "Выберите {label} на карте, чтобы сохранить точные координаты",
+  "@selectOnMapToSave": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "orderPreview": "Проверка заказа",
+  "route": "Маршрут",
+  "details": "Детали",
+  "itemsCount": "{count} мест",
+  "@itemsCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "orderCreationNotice": "После подтверждения заказ станет доступен курьерам. Цена будет рассчитана системой автоматически.",
+  "confirmAndSend": "Подтвердить и отправить",
+  "editData": "Изменить данные",
+  "fromLabel": "ОТКУДА",
+  "toLabel": "КУДА",
+  "phoneLabel": "Телефон",
+  "passwordLabel": "Пароль",
+  "loginButton": "Войти",
+  "noAccountRegister": "Нет аккаунта? Зарегистрироваться",
+  "authSubtitle": "Доставка и курьерские заказы",
+  "loginFailed": "Не удалось войти. Проверьте данные и попробуйте снова",
+  "availableOrders": "Доступные заказы",
+  "noAvailableOrders": "Нет доступных заказов",
+  "goOnlineHint": "Включите онлайн, чтобы получать заказы",
+  "helloGreeting": "Привет, {name}!",
+  "@helloGreeting": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "youAreOnline": "Вы онлайн",
+  "youAreOffline": "Вы оффлайн",
+  "today": "Сегодня",
+  "earned": "Заработано",
+  "errorNoOrderNumber": "Не удалось открыть заказ: сервер не вернул номер заказа",
+  "filterNew": "Новые",
+  "filterActive": "В пути",
+  "filterDone": "Доставлены",
+  "filterCancelled": "Отменены",
+  "refreshHint": "Потяните вниз, чтобы обновить список.",
+  "registration": "Регистрация",
+  "phoneExistsTitle": "Номер уже зарегистрирован",
+  "phoneExistsContent": "Этот номер уже используется. Войти?",
+  "cancel": "Отмена",
+  "fullNameLabel": "Полное имя",
+  "nameLabel": "Имя",
+  "emailOptionalLabel": "Email (необязательно)",
+  "confirmPasswordLabel": "Подтвердите пароль",
+  "roleLabel": "Роль",
+  "registerButton": "Зарегистрироваться"
+}

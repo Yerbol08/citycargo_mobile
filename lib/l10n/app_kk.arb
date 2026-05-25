@@ -1,0 +1,158 @@
+{
+  "@@locale": "kk",
+  "appTitle": "CityCargo",
+  "orders": "Тапсырыстар",
+  "profile": "Профиль",
+  "wallet": "Әмиян",
+  "home": "Басты бет",
+  "createOrder": "Тапсырыс жасау",
+  "orderDetails": "Тапсырыс мәліметтері",
+  "statusCreated": "Жасалған",
+  "statusAssigned": "Курьер тағайындалды",
+  "statusArrivedSender": "Курьер жіберушіге келді",
+  "statusPickedUp": "Жіберушіден алынды",
+  "statusArrivedRecipient": "Курьер алушыға келді",
+  "statusDelivered": "Жеткізілді",
+  "statusCancelled": "Бас тартылды",
+  "recentOrders": "Соңғы тапсырыстар",
+  "all": "Барлығы",
+  "activeOrders": "Белсенді",
+  "totalOrders": "Барлығы",
+  "noOrdersTitle": "Тапсырыстар жоқ",
+  "noOrdersSubtitle": "Алғашқы тапсырысыңызды бірнеше минутта жасаңыз.",
+  "newOrderButton": "Жаңа тапсырыс",
+  "settings": "Баптаулар",
+  "appearance": "Сыртқы түр",
+  "appTheme": "Қосымша тақырыбы",
+  "themeSystem": "Жүйелік",
+  "themeLight": "Ашық",
+  "themeDark": "Қараңғы",
+  "language": "Тіл",
+  "appLanguage": "Қосымша тілі",
+  "selectTheme": "Тақырыпты таңдаңыз",
+  "selectLanguage": "Тілді таңдаңыз",
+  "myShipments": "Менің жөнелтілімдерім",
+  "myReceipts": "Менің қабылдауларым",
+  "shipments": "Жөнелтілімдер",
+  "receipts": "Қабылдаулар",
+  "routeMap": "Маршрут картасы",
+  "routeUnavailable": "Маршрут уақытша қолжетімсіз",
+  "toSender": "Жіберушіге",
+  "toRecipient": "Алушыға",
+  "tooManyAttempts": "Әрекеттер саны тым көп.\nОператорға хабарласыңыз.",
+  "invalidCode": "Қате код",
+  "codeAccepted": "Код қабылданды",
+  "accountBlocked": "Аккаунт бұғатталды",
+  "contactSupport": "Қолдау қызметіне хабарласыңыз",
+  "toLoginScreen": "Кіру экранына",
+  "adminDashboard": "Панель",
+  "adminUsers": "Пайдаланушылар",
+  "adminFinance": "Қаржы",
+  "adminMap": "Карта",
+  "adminChats": "Чаттар",
+  "adminRequests": "Өтінімдер",
+  "orderStatus": "Тапсырыс мәртебесі",
+  "orderLabel": "Тапсырыс",
+  "addressNotSpecified": "Мекенжай көрсетілмеген",
+  "greeting": "Сәлеметсіз бе, {name}",
+  "@greeting": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "homeSubtitle": "CityCargo-мен жөнелтілімдерді жіберіңіз және бақылаңыз",
+  "activeOrderLabel": "Белсенді тапсырыс",
+  "defaultClientName": "клиент",
+  "selectAddressHint": "Мекенжайды таңдаңыз...",
+  "newOrder": "Жаңа тапсырыс",
+  "sender": "Жіберуші",
+  "senderPhone": "Жіберушінің телефоны",
+  "senderAddressLabel": "Жіберу мекенжайы",
+  "recipient": "Алушы",
+  "recipientPhone": "Алушының телефоны",
+  "recipientAddressLabel": "Жеткізу мекенжайы",
+  "parcel": "Сәлемдеме",
+  "parcelCountLabel": "Орындар саны",
+  "commentLabel": "Түсініктеме",
+  "commentHint": "Мысалы: 10 минут бұрын хабарласыңыз",
+  "continueButton": "Жалғастыру",
+  "preliminaryPrice": "Алдын ала баға",
+  "priceNotice": "Нақты сома тапсырыс жасалғаннан кейін серверден келеді",
+  "needToSelectOnMap": "Картадан таңдау керек",
+  "coordsSaved": "Координаттар сақталды",
+  "map": "Карта",
+  "tagHome": "Үй",
+  "tagOffice": "Офис",
+  "tagWarehouse": "Қойма",
+  "enterAddress": "{label} енгізіңіз",
+  "@enterAddress": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "selectOnMapToSave": "Нақты координаттарды сақтау үшін картадан {label} таңдаңыз",
+  "@selectOnMapToSave": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "orderPreview": "Тапсырысты тексеру",
+  "route": "Маршрут",
+  "details": "Мәліметтер",
+  "itemsCount": "{count} орын",
+  "@itemsCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "orderCreationNotice": "Растаудан кейін тапсырыс курьерлерге қолжетімді болады. Бағасы жүйемен автоматты түрде есептеледі.",
+  "confirmAndSend": "Растау және жіберу",
+  "editData": "Мәліметтерді өзгерту",
+  "fromLabel": "ҚАЙДАН",
+  "toLabel": "ҚАЙДА",
+  "phoneLabel": "Телефон",
+  "passwordLabel": "Құпия сөз",
+  "loginButton": "Кіру",
+  "noAccountRegister": "Аккаунт жоқ па? Тіркелу",
+  "authSubtitle": "Жеткізу және курьерлік тапсырыстар",
+  "loginFailed": "Кіру мүмкін болмады. Мәліметтерді тексеріп, қайта көріңіз",
+  "availableOrders": "Қолжетімді тапсырыстар",
+  "noAvailableOrders": "Қолжетімді тапсырыстар жоқ",
+  "goOnlineHint": "Тапсырыстарды алу үшін онлайн режимін қосыңыз",
+  "helloGreeting": "Сәлем, {name}!",
+  "@helloGreeting": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "youAreOnline": "Сіз онлайнсыз",
+  "youAreOffline": "Сіз оффлайнсыз",
+  "today": "Бүгін",
+  "earned": "Табыс",
+  "errorNoOrderNumber": "Тапсырысты ашу мүмкін болмады: сервер тапсырыс нөмірін қайтармады",
+  "filterNew": "Жаңа",
+  "filterActive": "Жолда",
+  "filterDone": "Жеткізілді",
+  "filterCancelled": "Бас тартылды",
+  "refreshHint": "Тізімді жаңарту үшін төмен қарай тартыңыз.",
+  "registration": "Тіркелу",
+  "phoneExistsTitle": "Нөмір тіркелген",
+  "phoneExistsContent": "Бұл нөмір қолданыста. Кіру керек пе?",
+  "cancel": "Бас тарту",
+  "fullNameLabel": "Толық аты-жөні",
+  "nameLabel": "Есімі",
+  "emailOptionalLabel": "Email (міндетті емес)",
+  "confirmPasswordLabel": "Құпия сөзді растаңыз",
+  "roleLabel": "Рөлі",
+  "registerButton": "Тіркелу"
+}

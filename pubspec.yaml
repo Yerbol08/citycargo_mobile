@@ -1,0 +1,101 @@
+name: citycargo_mobile
+description: CityCargo - Мобильное приложение доставки
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+
+  # HTTP
+  dio: ^5.7.0
+
+  # State management
+  riverpod: ^2.6.1
+  flutter_riverpod: ^2.6.1
+
+  # Navigation
+  go_router: ^14.6.2
+
+  # Models
+  freezed_annotation: ^2.4.4
+  json_annotation: ^4.9.0
+
+  # Secure storage
+  flutter_secure_storage: ^9.2.2
+
+  # Location
+  geolocator: ^13.0.2
+  permission_handler: ^11.3.1
+
+  # Maps
+  geocoding: ^3.0.0
+
+  # Images
+  cached_network_image: ^3.4.1
+
+  # Formatting
+  intl: ^0.20.2
+
+  # Utils
+  url_launcher: ^6.3.1
+  flutter_map: ^8.3.0
+  latlong2: ^0.9.1
+  shimmer: ^3.0.0
+  envied: any
+  sentry_flutter: ^8.14.2
+
+  # Real-time chat
+  web_socket_channel: ^3.0.2
+
+  # Animations
+  flutter_animate: ^4.5.0
+
+  # Push notifications
+  firebase_core: ^3.13.0
+  firebase_messaging: ^15.2.5
+  flutter_local_notifications: ^18.0.0
+  flutter_map_marker_cluster: ^8.2.2
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+  path_provider: ^2.1.5
+  fl_chart: ^1.2.0
+  connectivity_plus: ^7.1.1
+  google_fonts: ^8.1.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+  build_runner: ^2.4.13
+  envied_generator: any
+  freezed: ^2.5.7
+  json_serializable: ^6.8.0
+  flutter_native_splash: ^2.4.7
+  flutter_launcher_icons: ^0.14.2
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/images/logo.png"
+
+flutter_native_splash:
+  color: "#13925F"
+  image: "assets/images/logo.png"
+  android_12:
+    image: "assets/images/logo.png"
+    icon_background_color: "#13925F"
+
+flutter:
+  uses-material-design: true
+  generate: true
+
+  assets:
+    - assets/images/

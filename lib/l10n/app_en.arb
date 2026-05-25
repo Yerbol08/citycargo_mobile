@@ -1,0 +1,158 @@
+{
+  "@@locale": "en",
+  "appTitle": "CityCargo",
+  "orders": "Orders",
+  "profile": "Profile",
+  "wallet": "Wallet",
+  "home": "Home",
+  "createOrder": "Create Order",
+  "orderDetails": "Order Details",
+  "statusCreated": "Created",
+  "statusAssigned": "Courier Assigned",
+  "statusArrivedSender": "Arrived at Sender",
+  "statusPickedUp": "Picked Up",
+  "statusArrivedRecipient": "Arrived at Recipient",
+  "statusDelivered": "Delivered",
+  "statusCancelled": "Cancelled",
+  "recentOrders": "Recent Orders",
+  "all": "All",
+  "activeOrders": "Active",
+  "totalOrders": "Total",
+  "noOrdersTitle": "No Orders",
+  "noOrdersSubtitle": "Create your first order in minutes.",
+  "newOrderButton": "New Order",
+  "settings": "Settings",
+  "appearance": "Appearance",
+  "appTheme": "App Theme",
+  "themeSystem": "System",
+  "themeLight": "Light",
+  "themeDark": "Dark",
+  "language": "Language",
+  "appLanguage": "App Language",
+  "selectTheme": "Select theme",
+  "selectLanguage": "Select language",
+  "myShipments": "My Shipments",
+  "myReceipts": "My Receipts",
+  "shipments": "Shipments",
+  "receipts": "Receipts",
+  "routeMap": "Route Map",
+  "routeUnavailable": "Route temporarily unavailable",
+  "toSender": "To Sender",
+  "toRecipient": "To Recipient",
+  "tooManyAttempts": "Too many attempts.\nPlease contact support.",
+  "invalidCode": "Invalid code",
+  "codeAccepted": "Code accepted",
+  "accountBlocked": "Account blocked",
+  "contactSupport": "Please contact support",
+  "toLoginScreen": "To login screen",
+  "adminDashboard": "Panel",
+  "adminUsers": "Users",
+  "adminFinance": "Finance",
+  "adminMap": "Map",
+  "adminChats": "Chats",
+  "adminRequests": "Requests",
+  "orderStatus": "Order Status",
+  "orderLabel": "Order",
+  "addressNotSpecified": "Address not specified",
+  "greeting": "Hello, {name}",
+  "@greeting": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "homeSubtitle": "Send and track deliveries in CityCargo",
+  "activeOrderLabel": "Active Order",
+  "defaultClientName": "customer",
+  "selectAddressHint": "Select address...",
+  "newOrder": "New Order",
+  "sender": "Sender",
+  "senderPhone": "Sender phone",
+  "senderAddressLabel": "Sender address",
+  "recipient": "Recipient",
+  "recipientPhone": "Recipient phone",
+  "recipientAddressLabel": "Delivery address",
+  "parcel": "Parcel",
+  "parcelCountLabel": "Number of items",
+  "commentLabel": "Comment",
+  "commentHint": "E.g.: call 10 minutes before",
+  "continueButton": "Continue",
+  "preliminaryPrice": "Preliminary price",
+  "priceNotice": "The exact amount will come from the server after creation",
+  "needToSelectOnMap": "Need to select on map",
+  "coordsSaved": "Coordinates saved",
+  "map": "Map",
+  "tagHome": "Home",
+  "tagOffice": "Office",
+  "tagWarehouse": "Warehouse",
+  "enterAddress": "Enter {label}",
+  "@enterAddress": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "selectOnMapToSave": "Select {label} on the map to save exact coordinates",
+  "@selectOnMapToSave": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "orderPreview": "Order Preview",
+  "route": "Route",
+  "details": "Details",
+  "itemsCount": "{count} items",
+  "@itemsCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "orderCreationNotice": "After confirmation, the order will become available to couriers. The price will be calculated automatically by the system.",
+  "confirmAndSend": "Confirm and Send",
+  "editData": "Edit Details",
+  "fromLabel": "FROM",
+  "toLabel": "TO",
+  "phoneLabel": "Phone",
+  "passwordLabel": "Password",
+  "loginButton": "Login",
+  "noAccountRegister": "No account? Register",
+  "authSubtitle": "Delivery and courier orders",
+  "loginFailed": "Failed to login. Please check your data and try again",
+  "availableOrders": "Available Orders",
+  "noAvailableOrders": "No available orders",
+  "goOnlineHint": "Go online to receive orders",
+  "helloGreeting": "Hello, {name}!",
+  "@helloGreeting": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "youAreOnline": "You are online",
+  "youAreOffline": "You are offline",
+  "today": "Today",
+  "earned": "Earned",
+  "errorNoOrderNumber": "Could not open order: server did not return an order number",
+  "filterNew": "New",
+  "filterActive": "In transit",
+  "filterDone": "Delivered",
+  "filterCancelled": "Cancelled",
+  "refreshHint": "Pull down to refresh the list.",
+  "registration": "Registration",
+  "phoneExistsTitle": "Phone already registered",
+  "phoneExistsContent": "This phone number is already in use. Login instead?",
+  "cancel": "Cancel",
+  "fullNameLabel": "Full Name",
+  "nameLabel": "Name",
+  "emailOptionalLabel": "Email (optional)",
+  "confirmPasswordLabel": "Confirm Password",
+  "roleLabel": "Role",
+  "registerButton": "Register"
+}
