@@ -203,17 +203,17 @@ class OsmMap extends StatelessWidget {
   }) {
     return Marker(
       point: point,
-      width: 84,
-      height: 90,
+      width: 60,
+      height: 64,
       alignment: Alignment.bottomCenter,
       child: SizedBox(
-        width: 84,
-        height: 90,
+        width: 60,
+        height: 64,
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
             ConstrainedBox(
-              constraints: const BoxConstraints(maxWidth: 72),
+              constraints: const BoxConstraints(maxWidth: 52),
               child: Container(
                 padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 3),
                 decoration: BoxDecoration(
@@ -233,13 +233,13 @@ class OsmMap extends StatelessWidget {
                   overflow: TextOverflow.ellipsis,
                   style: TextStyle(
                     color: color,
-                    fontSize: 11,
+                    fontSize: 9,
                     fontWeight: FontWeight.w700,
                   ),
                 ),
               ),
             ),
-            const SizedBox(height: 4),
+            const SizedBox(height: 2),
             _MapPin(color: color, icon: icon),
           ],
         ),
@@ -337,18 +337,18 @@ class _MapPin extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      width: 42,
-      height: 54,
+      width: 28,
+      height: 36,
       child: Stack(
         alignment: Alignment.topCenter,
         children: [
           Positioned(
-            top: 26,
+            top: 18,
             child: Transform.rotate(
               angle: 0.785398,
               child: Container(
-                width: 24,
-                height: 24,
+                width: 16,
+                height: 16,
                 decoration: BoxDecoration(
                   color: color,
                   borderRadius: BorderRadius.circular(4),
@@ -364,21 +364,21 @@ class _MapPin extends StatelessWidget {
             ),
           ),
           Container(
-            width: 42,
-            height: 42,
+            width: 28,
+            height: 28,
             decoration: BoxDecoration(
               shape: BoxShape.circle,
               color: color,
-              border: Border.all(color: Colors.white, width: 3),
+              border: Border.all(color: Colors.white, width: 2),
               boxShadow: [
                 BoxShadow(
                   color: Colors.black.withValues(alpha: 0.22),
-                  blurRadius: 10,
-                  offset: const Offset(0, 4),
+                  blurRadius: 6,
+                  offset: const Offset(0, 3),
                 ),
               ],
             ),
-            child: Icon(icon, color: Colors.white, size: 20),
+            child: Icon(icon, color: Colors.white, size: 14),
           ),
         ],
       ),

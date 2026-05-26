@@ -183,9 +183,19 @@ class OrderNavigationActions extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final l10n = AppLocalizations.of(context)!;
+    
+    final status = order.status;
+    final isCompleted = OrderStatusMapper.isCompleted(status) || OrderStatusMapper.isCancelled(status);
+    final isPickedUp = OrderStatusMapper.canShowDeliveryCode(status);
+
+    final showSender = includeSender && !isCompleted && !isPickedUp;
+    final showRecipient = includeRecipient && !isCompleted;
+
+    if (!showSender && !showRecipient) return const SizedBox.shrink();
+
     return Row(
       children: [
-        if (includeSender)
+        if (showSender)
           Expanded(
             child: OutlinedButton.icon(
               onPressed: () => _openNavigation(
@@ -197,8 +207,8 @@ class OrderNavigationActions extends StatelessWidget {
               label: Text(l10n.toSender),
             ),
           ),
-        if (includeSender && includeRecipient) const SizedBox(width: 10),
-        if (includeRecipient)
+        if (showSender && showRecipient) const SizedBox(width: 10),
+        if (showRecipient)
           Expanded(
             child: ElevatedButton.icon(
               onPressed: () => _openNavigation(
