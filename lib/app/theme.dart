@@ -21,7 +21,7 @@ class AppColors {
   static const Color surface = Color(0xFFFFFFFF);
   static const Color surfaceMuted = Color(0xFFEEF2F0);
   static const Color grayText = Color(0xFF88968F);
-  static const Color border = Color(0xFFE2E9E5);
+  static const Color border = Colors.transparent;
   static const Color textPrimary = Color(0xFF1A211E);
   static const Color textSecondary = Color(0xFF5D6B64);
   
@@ -101,6 +101,7 @@ ThemeData buildAppTheme() {
         foregroundColor: AppColors.textPrimary,
         backgroundColor: AppColors.surface,
         minimumSize: const Size.fromHeight(AppSizes.buttonHeight),
+        side: BorderSide.none,
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(AppSizes.radiusLg),
         ),
@@ -179,7 +180,7 @@ ThemeData buildAppTheme() {
 ThemeData buildDarkTheme() {
   const darkSurface = Color(0xFF1E2622);
   const darkBg = Color(0xFF121614);
-  const darkBorder = Color(0xFF2C3631);
+  const darkBorder = Colors.transparent;
   const darkText = Color(0xFFE2E9E5);
   const darkTextSec = Color(0xFFA1AEA6);
 
@@ -243,6 +244,7 @@ ThemeData buildDarkTheme() {
         foregroundColor: darkText,
         backgroundColor: darkSurface,
         minimumSize: const Size.fromHeight(AppSizes.buttonHeight),
+        side: BorderSide.none,
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(AppSizes.radiusLg),
         ),
