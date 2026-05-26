@@ -94,7 +94,7 @@ class AddressFieldButton extends StatelessWidget {
         ),
         const SizedBox(height: 6),
         Material(
-          color: Theme.of(context).colorScheme.surface,
+          color: Theme.of(context).inputDecorationTheme.fillColor ?? Theme.of(context).colorScheme.surface,
           borderRadius: BorderRadius.circular(AppSizes.radiusMd),
           child: InkWell(
             onTap: onTap,

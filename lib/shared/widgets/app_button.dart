@@ -46,7 +46,6 @@ class AppButton extends StatelessWidget {
           foregroundColor: effectiveColor == AppColors.primary
               ? Theme.of(context).textTheme.bodyLarge?.color
               : effectiveColor,
-          backgroundColor: Theme.of(context).colorScheme.surface,
           side: BorderSide.none,
           minimumSize: const Size.fromHeight(AppSizes.buttonHeight),
           shape: RoundedRectangleBorder(

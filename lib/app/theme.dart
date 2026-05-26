@@ -99,7 +99,7 @@ ThemeData buildAppTheme() {
     outlinedButtonTheme: OutlinedButtonThemeData(
       style: OutlinedButton.styleFrom(
         foregroundColor: AppColors.textPrimary,
-        backgroundColor: AppColors.surface,
+        backgroundColor: AppColors.surfaceMuted,
         minimumSize: const Size.fromHeight(AppSizes.buttonHeight),
         side: BorderSide.none,
         shape: RoundedRectangleBorder(
@@ -136,7 +136,7 @@ ThemeData buildAppTheme() {
     ),
     inputDecorationTheme: InputDecorationTheme(
       filled: true,
-      fillColor: Colors.white,
+      fillColor: AppColors.surfaceMuted,
       labelStyle: const TextStyle(
         color: AppColors.textSecondary,
         fontSize: 13,
@@ -242,7 +242,7 @@ ThemeData buildDarkTheme() {
     outlinedButtonTheme: OutlinedButtonThemeData(
       style: OutlinedButton.styleFrom(
         foregroundColor: darkText,
-        backgroundColor: darkSurface,
+        backgroundColor: darkBg,
         minimumSize: const Size.fromHeight(AppSizes.buttonHeight),
         side: BorderSide.none,
         shape: RoundedRectangleBorder(
@@ -279,7 +279,7 @@ ThemeData buildDarkTheme() {
     ),
     inputDecorationTheme: InputDecorationTheme(
       filled: true,
-      fillColor: darkSurface,
+      fillColor: darkBg,
       labelStyle: const TextStyle(
         color: darkTextSec,
         fontSize: 13,
