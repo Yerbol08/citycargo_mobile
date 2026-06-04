@@ -20,6 +20,7 @@ class _AdminCourierMapScreenState extends ConsumerState<AdminCourierMapScreen> {
   static const _astana = LatLng(51.1605, 71.4704);
 
   late Future<List<Map<String, dynamic>>> _future;
+  final _searchCtrl = TextEditingController();
   Map<String, dynamic>? _selectedCourier;
   LatLng? _selectedLocation;
   String? _locationError;
@@ -28,6 +29,15 @@ class _AdminCourierMapScreenState extends ConsumerState<AdminCourierMapScreen> {
   void initState() {
     super.initState();
     _future = _load();
+    _searchCtrl.addListener(() {
+      setState(() {});
+    });
+  }
+
+  @override
+  void dispose() {
+    _searchCtrl.dispose();
+    super.dispose();
   }
 
   Future<List<Map<String, dynamic>>> _load() {
@@ -80,7 +90,14 @@ class _AdminCourierMapScreenState extends ConsumerState<AdminCourierMapScreen> {
     return FutureBuilder<List<Map<String, dynamic>>>(
       future: _future,
       builder: (context, snap) {
-        final couriers = snap.data ?? const <Map<String, dynamic>>[];
+        var couriers = snap.data ?? const <Map<String, dynamic>>[];
+        final query = _searchCtrl.text.trim().toLowerCase();
+        if (query.isNotEmpty) {
+          couriers = couriers.where((c) {
+            final name = _text(c, ['full_name', 'name', 'phone']).toLowerCase();
+            return name.contains(query);
+          }).toList();
+        }
         return AdminListScaffold(
           title: 'Карта исполнителей',
           isLoading: snap.connectionState == ConnectionState.waiting,
@@ -97,12 +114,21 @@ class _AdminCourierMapScreenState extends ConsumerState<AdminCourierMapScreen> {
               ClipRRect(
                 borderRadius: BorderRadius.circular(AppSizes.radiusLg),
                 child: SizedBox(
-                  height: 220,
+                  height: 250,
                   child: OsmMap(
                     initialCenter: _selectedLocation ?? _astana,
                     initialZoom: _selectedLocation == null ? 11 : 15,
                     courierPoint: _selectedLocation,
+                    showZoomControls: false,
                   ),
+                ),
+              ),
+              const SizedBox(height: 16),
+              TextField(
+                controller: _searchCtrl,
+                decoration: const InputDecoration(
+                  hintText: 'Поиск курьера...',
+                  prefixIcon: Icon(Icons.search),
                 ),
               ),
               if (_selectedCourier != null) ...[

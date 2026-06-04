@@ -105,13 +105,16 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
           ),
         ),
       ),
-      floatingActionButton: FloatingActionButton.extended(
-        onPressed: () => context.push('/orders/create'),
-        backgroundColor: AppColors.primary,
-        icon: const Icon(Icons.add, color: Colors.white),
-        label: Text(
-          AppLocalizations.of(context)!.newOrderButton,
-          style: const TextStyle(color: Colors.white, fontWeight: FontWeight.w800),
+      floatingActionButton: Padding(
+        padding: const EdgeInsets.only(bottom: AppSizes.bottomNavHeight),
+        child: FloatingActionButton.extended(
+          onPressed: () => context.push('/orders/create'),
+          backgroundColor: AppColors.primary,
+          icon: const Icon(Icons.add, color: Colors.white),
+          label: Text(
+            AppLocalizations.of(context)!.newOrderButton,
+            style: const TextStyle(color: Colors.white, fontWeight: FontWeight.w800),
+          ),
         ),
       ),
     );

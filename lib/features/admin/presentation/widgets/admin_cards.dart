@@ -159,7 +159,7 @@ class AdminListScaffold extends StatelessWidget {
               : RefreshIndicator(
                   onRefresh: () async => onRefresh(),
                   child: ListView(
-                    padding: const EdgeInsets.all(16),
+                    padding: const EdgeInsets.fromLTRB(16, 16, 16, 100),
                     children: [
                       if (header != null) ...[
                         header!,
